@@ -1,1 +1,5 @@
-
+{
+    "prefix":"p!",
+    "token": "ODI3MTA2NzgzNDY1NzAxMzc3.YGWNOA.RsrbdnEt6EojfiIcWNa1IdI4Aao",
+    "mongoose": "mongodb+srv://admin:LrmPLX7XBXycB2Bw@cluster0.5ple7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
