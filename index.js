@@ -1,7 +1,5 @@
 const mySecret = process.env['TOKEN']
 const Discord = require('discord.js');
-const keepAlive = require('./server');
-const Monitor = require('ping-monitor');
 const Kitsu = require('kitsu.js');
 const mongoose = require('mongoose');
 const config = require("./config.json");
@@ -27,17 +25,6 @@ client.kitsu = new Kitsu();
 client.mongoose = require('./utils/mongoose');
 //config({
 
-keepAlive();
-const monitor = new Monitor({
-    website: 'https://aIdollarXeW39992h9.sgymazse5zbuhgg.repl.co',
-    title: 'Secundario',
-    interval: 30 // minutes
-});
-
-monitor.on('up', (res) => console.log(`${res.website} está encedido.`));
-monitor.on('down', (res) => console.log(`${res.website} se ha caído - ${res.statusMessage}`));
-monitor.on('stop', (website) => console.log(`${website} se ha parado.`) );
-monitor.on('error', (error) => console.log(error));
 //handler
 
 //inicio de tudo
