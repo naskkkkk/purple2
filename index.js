@@ -21,7 +21,7 @@ const prefix = config.prefix;
 client.kitsu = new Kitsu();
 // after client initialisation
 
-//config({
+//config
 
 
 
