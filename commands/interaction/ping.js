@@ -4,7 +4,7 @@ module.exports = {
   alias: ["pong", "ping"],
 
 
- Async execute (client, message, args){
+ async execute (client, message, args){
 
     const m = await message.reply('...')
 
