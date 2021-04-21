@@ -148,8 +148,8 @@ client.on("message", message => {
 if (message.author.bot) return;
 if (message.channel.type == 'dm')
 return
-if(message.content == '<@827106783465701377>' || message.content == '<@!827106783465701377>') {
-return message.channel.send(`<a:partyGirl:830816605725917205>**|** Olá ${message.author}! Meu prefixo é  \`p!\`, para saber meus comandos digite \`N!help\``)
+if(message.content == '<@833896609510981652>' || message.content == '<@!833896609510981652>') {
+return message.channel.send(`<a:partyGirl:830816605725917205>**|** Olá ${message.author}! Meu prefixo é  \`p!\`, para saber meus comandos digite \`p!help\``)
 }
 });
 
