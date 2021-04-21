@@ -108,7 +108,7 @@ for (const file of modcommandFiles) {
 }
 
  
- //Entrada
+ //Entrad
 
 
 
