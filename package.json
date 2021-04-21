@@ -24,6 +24,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
+    "jimp": "^0.16.1",
     "jumble-words": "^1.0.1",
     "kitsu.js": "^2.0.0",
     "mc-hermes": "^0.1.5",
