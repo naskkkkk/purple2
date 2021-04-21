@@ -4,16 +4,10 @@ module.exports = {
   alias: ["pong", "ping"],
 
 
- async execute (client, message, args){
+async execute (client, message, args){
 
-    const m = await message.reply('...')
-
-    const pingEmbed = {
-        title: '🏓 Pong!',
-        description: `**:stopwatch:Gateway Ping** \`${m.createdTimestamp - message.createdTimestamp}ms\`.\n**:zap:API Ping** \`${Math.round(client.ws.ping)}ms\`.`,
-         color: '0xe91e63',
-    } 
-
-    m.edit(message.author, {embed: pingEmbed})
+ const ms = await message.channel.send("Ping?");
+	const clientms = ms.createdTimestamp - message.createdTimestamp;
+	ms.edit('📡 Seu ping é: ' + clientms + 'ms / 🖥 Ping do bot com Server:' + Math.floor(client.ping) + 'ms');
 }
 }
