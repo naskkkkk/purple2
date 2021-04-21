@@ -1,12 +1,10 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
-const { Client, MessageEmbed } = require('discord.js');
 module.exports = {
   name: "ping",
-  alias: [],
+  alias: ["pong", "ping"],
 
 
- execute (client, message, args){
+ Async execute (client, message, args){
 
     const m = await message.reply('...')
 
